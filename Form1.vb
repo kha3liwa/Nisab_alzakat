@@ -2,14 +2,9 @@
 
 Public Class Form1
 
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        txtNow.Text = Now
-    End Sub
-
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim ci As New CultureInfo("ar-sa")
+        txtHigry.Text = DateTimePicker2.Value.ToString("dd/MMM/yyyy", ci)
         Try
             Dim xx As Date
             xx = Now
@@ -36,7 +31,8 @@ Public Class Form1
         End Try
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Cals.Click
+
         Try
             Dim wazn, alnisab, qerat As Double
             Dim result As Double = 0
@@ -44,10 +40,14 @@ Public Class Form1
             alnisab = Convert.ToDouble(txtSAR.Text)
             qerat = Convert.ToDouble(ComboBox1.SelectedItem)
             result = wazn * qerat / 24
-            txtnisabalzkat_klalwzin.Text = result
-
+            txtnisabalzkat_klalwzin.Text = result - 85
+            If txtklalwzin.Text <= 85 Then
+                bt2.Visible = False
+            Else
+                bt2.Visible = True
+            End If
         Catch ex As Exception
-            MsgBox("Error !!! سعر القراط أو الوزن الكلي أو نوع القراط فارغ")
+            MsgBox(" !!! سعر الغرام أو الوزن الكلي أو نوع القراط فارغ")
         End Try
 
     End Sub
@@ -57,7 +57,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles bt2.Click
         Try
             Dim nisab, allnisab As String
 
@@ -71,7 +71,7 @@ Public Class Form1
             txt_onONEyear.Text = txtmkdarZkat.Text / 40
             txtagmaly_al_zkat.Text = Val(txtdenar_on_years.Text) / 40
         Catch ex As Exception
-            MsgBox("Error - Some think is Empty !!! ")
+            MsgBox("إذهب الى ثانيا واملأ المطلوب  !!! ")
         End Try
 
 
@@ -80,5 +80,29 @@ Public Class Form1
     Private Sub DateTimePicker2_ValueChanged_1(sender As Object, e As EventArgs) Handles DateTimePicker2.ValueChanged
         Dim ci As New CultureInfo("ar-sa")
         txtHigry.Text = DateTimePicker2.Value.ToString("dd/MMM/yyyy", ci)
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim dt As Date : dt = Now
+        Date_Time.Text = dt.ToLongDateString + " " + dt.ToLongTimeString
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        txtSAR.Text = ""
+        txtklalwzin.Text = ""
+        ComboBox1.Text = ""
+        txtHigry.Text = ""
+        xy.Text = ""
+        xm.Text = ""
+        xd.Text = ""
+        txtnisabalzkat_klalwzin.Text = ""
+        txtmkdarZkat.Text = ""
+        txt_onONEyear.Text = ""
+        txtdenar_on_years.Text = ""
+        txtagmaly_al_zkat.Text = ""
     End Sub
 End Class
