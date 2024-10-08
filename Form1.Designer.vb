@@ -110,7 +110,7 @@ Partial Class Form1
         '
         Me.Button4.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.Font = New System.Drawing.Font("خنفشار 1", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.SeaShell
         Me.Button4.Location = New System.Drawing.Point(594, 379)
         Me.Button4.Name = "Button4"
@@ -180,11 +180,11 @@ Partial Class Form1
         '
         Me.Label11.AutoSize = True
         Me.Label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label11.Font = New System.Drawing.Font("خنفشار 1", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Label11.Location = New System.Drawing.Point(458, 18)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 55)
+        Me.Label11.Size = New System.Drawing.Size(72, 46)
         Me.Label11.TabIndex = 39
         Me.Label11.Text = "ثالثاً"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -346,20 +346,20 @@ Partial Class Form1
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("A⁌Basrah", 20.0!)
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.Label22.Location = New System.Drawing.Point(-2, 47)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(25, 27)
+        Me.Label22.Size = New System.Drawing.Size(25, 31)
         Me.Label22.TabIndex = 34
         Me.Label22.Text = "*"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("A⁌Basrah", 20.0!)
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.Label21.Location = New System.Drawing.Point(-2, 15)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(25, 27)
+        Me.Label21.Size = New System.Drawing.Size(25, 31)
         Me.Label21.TabIndex = 33
         Me.Label21.Text = "*"
         '
@@ -367,11 +367,11 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label10.Font = New System.Drawing.Font("خنفشار 1", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Label10.Location = New System.Drawing.Point(169, 112)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 55)
+        Me.Label10.Size = New System.Drawing.Size(73, 46)
         Me.Label10.TabIndex = 32
         Me.Label10.Text = "ثانياً"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -567,11 +567,11 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label3.Font = New System.Drawing.Font("A⁌Basrah", 40.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label3.Location = New System.Drawing.Point(288, 26)
+        Me.Label3.Location = New System.Drawing.Point(349, 17)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(281, 54)
+        Me.Label3.Size = New System.Drawing.Size(180, 25)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "أولاً ادخل كل ما عليه *"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -598,10 +598,10 @@ Partial Class Form1
         'SAR
         '
         Me.SAR.AutoSize = True
-        Me.SAR.Font = New System.Drawing.Font("A⁌Basrah", 20.0!)
+        Me.SAR.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.SAR.Location = New System.Drawing.Point(0, 5)
         Me.SAR.Name = "SAR"
-        Me.SAR.Size = New System.Drawing.Size(25, 27)
+        Me.SAR.Size = New System.Drawing.Size(25, 31)
         Me.SAR.TabIndex = 20
         Me.SAR.Text = "*"
         '
@@ -618,10 +618,10 @@ Partial Class Form1
         'dateUse
         '
         Me.dateUse.AutoSize = True
-        Me.dateUse.Font = New System.Drawing.Font("A⁌Basrah", 20.0!)
+        Me.dateUse.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.dateUse.Location = New System.Drawing.Point(0, 39)
         Me.dateUse.Name = "dateUse"
-        Me.dateUse.Size = New System.Drawing.Size(25, 27)
+        Me.dateUse.Size = New System.Drawing.Size(25, 31)
         Me.dateUse.TabIndex = 21
         Me.dateUse.Text = "*"
         '
@@ -642,7 +642,7 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Font = New System.Drawing.Font("خنفشار 1", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.SeaShell
         Me.Button1.Location = New System.Drawing.Point(732, 379)
         Me.Button1.Name = "Button1"
